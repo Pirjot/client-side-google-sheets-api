@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Google Sheets API NSTEM</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <p>Google Sheets API</p>
+    <a href = "https://docs.google.com/spreadsheets/d/1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms/edit">
+    Default Link
+    </a>
+    <script src = "http://kjur.github.io/jsrsasign/jsrsasign-latest-all-min.js"></script>
+    <script src = "classes.js"></script>
+    <script src = "backend.js"></script>
+
+    <pre id="content" style="white-space: pre-wrap;"></pre>
+    <form>
+      <input id="input1" placeholder="Enter values separated by spaces."></form></input>
+    </form>
+    
+
+    <button onclick="pushValue()">Push Value</button>
+    <br></br>
+    <form id="inputTable"></form>
+    <button onclick="sheet.submitTable()">Update Table</button>
+
+    <script async defer src="https://apis.google.com/js/api.js"
+      onload="this.onload=function(){};handleClientLoad()"
+      onreadystatechange="if (this.readyState === 'complete') this.onload()">
+    </script>
+  </body>
+</html>
